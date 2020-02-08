@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Second</name>
+    <events>
+        <variable constant="0" name="cc" sid="681767652582613" static="0" type="number">0</variable>
+        <event-block sid="807665531707056">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="316052079945653" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="676670815980187" type="Audio" />
+                <action behavior="8Direction" id="8" name="Set enabled" sid="667922790916747" type="person01">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="875715678792759" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="0" name="Play" sid="624966825910921" type="Audio">
+                    <param id="0" name="Audio file">03</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="834357370681194">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="609969783688162" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="887880570345091" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="962426148819545" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="236699131653500" type="person01">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="517298549104473" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="475303600480080">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="931254617990128" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="679819029908320" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="535707002049261" type="map07">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="660353098898618" type="map08">
+                    <param id="0" name="X">map07.X</param>
+                    <param id="1" name="Y">map07.Y-2</param>
+                </action>
+                <action id="-24" name="Move to top" sid="490907920747094" type="map08" />
+                <action id="-24" name="Move to top" sid="969651036046463" type="person01" />
+            </actions>
+        </event-block>
+        <event-block sid="238993418152544">
+            <conditions>
+                <condition id="3" name="On key released" sid="311990562450761" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="688979363477294" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="275558818754102" type="person01">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="540427213494327" type="person01" />
+                <action id="-9" name="Set value" sid="833662535435154" type="System">
+                    <param id="0" name="Variable">a</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="235204091891606">
+            <conditions>
+                <condition id="3" name="On key released" sid="957249564778871" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="199671257082979" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="275342888483304" type="person01">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="883974111444147" type="person01" />
+                <action id="-9" name="Set value" sid="215702642172306" type="System">
+                    <param id="0" name="Variable">b</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="789273233844485">
+            <conditions>
+                <condition id="3" name="On key released" sid="216475853289450" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="692394675834687" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="280284139686760" type="person01">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="769803093010012" type="person01" />
+                <action id="-9" name="Set value" sid="140318811934767" type="System">
+                    <param id="0" name="Variable">c</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558962721966661">
+            <conditions>
+                <condition id="3" name="On key released" sid="936274529115667" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="210941578917015" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="214386035881756" type="person01">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="198154879514876" type="person01" />
+                <action id="-9" name="Set value" sid="290773667405606" type="System">
+                    <param id="0" name="Variable">d</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="411122507338710">
+            <conditions>
+                <condition id="2" name="Key is down" sid="899148728209188" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="880461610922229" type="System">
+                    <param id="0" name="Variable">b</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="416653485769951" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="336199186882055" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="702378510336268" type="person01">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="410449831409962" type="System">
+                    <param id="0" name="Variable">a</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="781486795045737">
+            <conditions>
+                <condition id="2" name="Key is down" sid="303874371225307" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="290131282071891" type="System">
+                    <param id="0" name="Variable">a</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="745694935840298" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="927090029736737" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="845092584555890" type="person01">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="407581314120677" type="System">
+                    <param id="0" name="Variable">b</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="593698955297536">
+            <conditions>
+                <condition id="2" name="Key is down" sid="635238556458185" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="744071881552150" type="System">
+                    <param id="0" name="Variable">a</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="876173482886541" type="System">
+                    <param id="0" name="Variable">b</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="678810420385992" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="588277250711672" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="224109451821191" type="person01">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="623906626925413" type="System">
+                    <param id="0" name="Variable">c</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="121924468805916">
+            <conditions>
+                <condition id="2" name="Key is down" sid="405213052849165" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="679703275673831" type="System">
+                    <param id="0" name="Variable">a</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="178307544661694" type="System">
+                    <param id="0" name="Variable">b</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="734403451128838" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="135461405181378" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="750797029936604" type="person01">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="359824005032301" type="System">
+                    <param id="0" name="Variable">d</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="175804024182810">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="245833677612072" type="person01">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="194260372836138" type="person01" />
+                <condition id="-14" name="Compare variable" sid="442215986513011" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="918292528409020" type="person01">
+                    <param id="0" name="Animation">&quot;ur&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="460758441052510">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="561641266109599" type="person01">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="229130366443084" type="person01" />
+                <condition id="-14" name="Compare variable" sid="203007764192044" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="816268255913145" type="person01">
+                    <param id="0" name="Animation">&quot;dr&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="448365313906146">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="502869351926786" type="person01">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="604261159429613" type="person01" />
+                <condition id="-14" name="Compare variable" sid="297821472836109" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="890857674723968" type="person01">
+                    <param id="0" name="Animation">&quot;lr&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="671935776913761">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="920966066795031" type="person01">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="599542002607974" type="person01" />
+                <condition id="-14" name="Compare variable" sid="337130613121840" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="307003119853526" type="person01">
+                    <param id="0" name="Animation">&quot;rr&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521799976528684">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="543826570659803" type="person01" />
+                <condition id="-14" name="Compare variable" sid="422525848981282" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="643222043051728" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="587491978190107" type="person01">
+                    <param id="0" name="Instance variable">col</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="210769221683947" type="a11">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="754795166696085" type="Text01">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="549877245240684" type="Text01">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="651059967632118">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="964955004587656" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="337751745396175" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="110808337841848" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="152788666162545" type="person01">
+                    <param id="0" name="Animation">&quot;u&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="565698408869113">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="126239202610705" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="914755888200470" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="458948520155378" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="932083113926383" type="person01">
+                    <param id="0" name="Animation">&quot;d&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="270692930391773">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="197075899968006" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="262754828581429" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="595736259079650" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="269290383574323" type="person01">
+                    <param id="0" name="Animation">&quot;l&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="261686943952319">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="979551953952169" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="354785786823069" type="System">
+                    <param id="0" name="Variable">istalking</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="686411081897339" type="System">
+                    <param id="0" name="Variable">cc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="383549638956267" type="person01">
+                    <param id="0" name="Animation">&quot;r&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="259437772413769">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="148995570956094" type="person01">
+                    <param id="0" name="Object">sign11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="979423699414434" type="System">
+                    <param id="0" name="Layout">map01</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

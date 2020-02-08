@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PK01</name>
+    <events>
+        <variable constant="0" name="gdb" sid="549855883845615" static="0" type="number">1</variable>
+        <variable constant="0" name="y1" sid="967796134151550" static="0" type="number">1085</variable>
+        <variable constant="0" name="x1" sid="864417874819525" static="0" type="number">1285</variable>
+        <variable constant="0" name="dir" sid="247948167433957" static="0" type="number">4</variable>
+        <variable constant="0" name="y" sid="585071239866503" static="0" type="number">1085</variable>
+        <variable constant="0" name="x" sid="567944048441922" static="0" type="number">1314</variable>
+        <variable constant="0" name="sc" sid="578031011078481" static="0" type="number">0</variable>
+        <variable constant="0" name="name" sid="507197568677736" static="0" type="text"></variable>
+        <variable constant="0" name="pm" sid="682908050879447" static="0" type="number">0</variable>
+        <variable constant="0" name="hp" sid="397852047776960" static="0" type="number">100</variable>
+        <event-block sid="763254798982144">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="236622030965026" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="597984889848693" type="System">
+                    <param id="0" name="Variable">pm</param>
+                    <param id="1" name="Value">int(random(1,6))</param>
+                </action>
+                <action id="-9" name="Set value" sid="706500974420964" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="558718593082055" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="715736849575162">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="706402378384007" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="824412715299518" type="System">
+                            <param id="0" name="Variable">name</param>
+                            <param id="1" name="Value">&quot;向日葵&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="979566663351068" type="sprite01">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="508601183574369" type="sprite01" />
+                    </actions>
+                </event-block>
+                <event-block sid="706673078956208">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="189837320277232" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="525854281420304" type="System">
+                            <param id="0" name="Variable">name</param>
+                            <param id="1" name="Value">&quot;火焰鼠&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="676281065834708" type="sprite02">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="245025284825620" type="sprite02" />
+                    </actions>
+                </event-block>
+                <event-block sid="126665852383518">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="214288150895615" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="505482008980816" type="System">
+                            <param id="0" name="Variable">name</param>
+                            <param id="1" name="Value">&quot;木守宫&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="717463170767786" type="sprite03">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="707749857172872" type="sprite03" />
+                    </actions>
+                </event-block>
+                <event-block sid="962043026451653">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="626515998036663" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="190932004842402" type="System">
+                            <param id="0" name="Variable">name</param>
+                            <param id="1" name="Value">&quot;雪拉比&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="403890359484032" type="sprite04">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="303306768346833" type="sprite04" />
+                    </actions>
+                </event-block>
+                <event-block sid="346981016198539">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="748044217141595" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="296351280594546" type="System">
+                            <param id="0" name="Variable">name</param>
+                            <param id="1" name="Value">&quot;拉帝欧斯&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="349960807181093" type="sprite05">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="522680328289216" type="sprite05" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="124441937208767">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="732424021640010" type="scene01">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">405</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="137678016638138" type="scene01">
+                    <param id="0" name="X">scene01.X  - 5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="384229913022073">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="720533273982599" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="189960134562827" type="sprite01">
+                            <param id="0" name="X">sprite01.X - 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="194220719081815">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="980975883459641" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="466668917442309" type="sprite02">
+                            <param id="0" name="X">sprite02.X - 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="873821770708242">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="973822752126149" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="626926147485976" type="sprite03">
+                            <param id="0" name="X">sprite03.X - 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="548672285402435">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="326430901638393" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="383956063897988" type="sprite04">
+                            <param id="0" name="X">sprite04.X - 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="609012492568689">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="373476933673240" type="System">
+                            <param id="0" name="Variable">pm</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="930409852619375" type="sprite05">
+                            <param id="0" name="X">sprite05.X - 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="503368193836843">
+            <conditions>
+                <condition id="-22" name="Else" sid="585224776604616" type="System" />
+                <condition id="-14" name="Compare variable" sid="332489914209586" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="871408455014960" type="a28">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="822311892135467" type="a11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="579697697775068" type="Text01">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="325026512942103" type="Text01">
+                    <param id="0" name="Text">&quot;野生的&quot;</param>
+                </action>
+                <action id="1" name="Append text" sid="981202635188901" type="Text01">
+                    <param id="0" name="Text">name</param>
+                </action>
+                <action id="1" name="Append text" sid="318635653405012" type="Text01">
+                    <param id="0" name="Text">&quot;出现了&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="535875767005283" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="922749772742095" type="Audio">
+                    <param id="0" name="Audio file">13</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="275316765230401">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="309982883507819" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="442048500847477" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="6" name="Set speed" sid="424937657971301" type="a28">
+                    <param id="0" name="Speed">5</param>
+                </action>
+                <action id="0" name="Set text" sid="463062154137911" type="Text01">
+                    <param id="0" name="Text">&quot;去吧！正电啪啪&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="388279680242971" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="366065508320355" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="786792226885743">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="889119634501455" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="955563643068763">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="628304924463575" type="a28">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="765924052766607" type="a28">
+                            <param id="0" name="X">a28.X - 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="985053562093434">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="903786236178435" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="712268267920077" type="System">
+                            <param id="0" name="Variable">sc</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="976541291811443">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="946788379439193" type="a16">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">270</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="482613129476117" type="a16">
+                            <param id="0" name="X">a16.X+10</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="795102823657469" type="a17">
+                            <param id="0" name="X">a17.X+10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="140228878987563">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="887450250627335" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="810648198103960" type="a18">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="482393719160414" type="a18">
+                            <param id="0" name="Width">a18.Width+0.85</param>
+                            <param id="1" name="Height">a18.Height</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="231034866974194">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="277035040572085" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="430267425732239" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-15" name="Set visible" sid="919455649220843" type="a28">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="164231852069592" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="676157669414173" type="a27">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="829884541767124">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="511797834770966" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="130891203476962" type="System">
+                    <param id="0" name="Variable">tmp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="450110882036946" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="446729099017513" type="System">
+                    <param id="0" name="Variable">tmp</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="838040333016738" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-16" name="Wait" sid="245814485084150" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="0" name="Set text" sid="967556138567225" type="Text01">
+                    <param id="0" name="Text">&quot;你要做些什么？&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="929746987309682" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="580251139551960" type="a30">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="862000138175626" type="System">
+                    <param id="0" name="Variable">tmp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="733556668782143" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+                <action id="0" name="Set text" sid="426028218691635" type="Text01">
+                    <param id="0" name="Text">&quot;         战斗                            逃跑&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="197084767754191" type="System">
+                    <param id="0" name="Variable">tmp</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="530778376107574">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="958650555858522" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="840851252832346" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="526985232641473" type="System">
+                    <param id="0" name="Variable">tmp</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="645440234271500" type="System">
+                    <param id="0" name="Variable">tmp</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="263517941106281" type="Audio">
+                    <param id="0" name="Audio file">02</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="621541700112763" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="692990977127038">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="559523906005750" type="a30">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">300</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="426279840221676" type="System">
+                            <param id="0" name="Variable">gdb</param>
+                            <param id="1" name="Value">int(random(1,2))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="381245336188396">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="970733315448815" type="System">
+                                    <param id="0" name="Variable">gdb</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="762980978221848" type="a30">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="177387785284050" type="Text01">
+                                    <param id="0" name="Text">&quot;逃跑成功&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="554453329716306" type="Audio">
+                                    <param id="0" name="Audio file">16</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="693370075779220" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="617407391504674" type="System">
+                                    <param id="0" name="Variable">tmp</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="315740713152664" type="System">
+                                    <param id="0" name="Variable">a</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="302466239826343" type="System">
+                                    <param id="0" name="Variable">b</param>
+                                    <param id="1" name="Value">b</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="649357352105406" type="System">
+                                    <param id="0" name="Variable">c</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="503920784385820" type="System">
+                                    <param id="0" name="Variable">d</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="377570445018594" type="System">
+                                    <param id="0" name="Layout">map02</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="179807836331998">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="279058861752743" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="306711738747307" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="697058291052935" type="a30">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="162636439350790" type="Text01">
+                                    <param id="0" name="Text">&quot;逃跑失败&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="503450917605846" type="System">
+                                    <param id="0" name="Variable">tmp</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="310144571539358" type="System">
+                                    <param id="0" name="Variable">sc</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="575344500564595">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="822385972029754" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="195627412072502" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="727375748591146" type="a30">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="808297302978364" type="Text01">
+                            <param id="0" name="Text">&quot;正电啪啪使用了十万伏特&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="481438390494853" type="System">
+                            <param id="0" name="Variable">hp</param>
+                            <param id="1" name="Value">random(0.0,3.6)*20</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="184535575929777" type="a23">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="690631361259002" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="342314472689001" type="a23">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="289630825906506" type="System">
+                            <param id="0" name="Seconds">0.15</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="536134903969497" type="a23">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="350523580636611" type="System">
+                            <param id="0" name="Seconds">0.15</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="549535976397622" type="a23">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="452547544866426" type="System">
+                            <param id="0" name="Variable">tmp</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="240072440812211" type="System">
+                            <param id="0" name="Variable">sc</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="504277722924490">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="465003290150487" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="985649424674210" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="490609549550132" type="a30">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">222</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="162587127281661" type="a30">
+                    <param id="0" name="X">a30.X-195</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="925163242474270">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="597522274161435" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="813957392729341" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="193680982027936" type="a30">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">417</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="738784522898728" type="a30">
+                    <param id="0" name="X">a30.X+195</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="990860469912023">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="162534285493789" type="System">
+                    <param id="0" name="Variable">hp</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="592997299283527" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="951413592928721" type="System">
+                    <param id="0" name="Variable">sc</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+                <action id="0" name="Play" sid="355461130109627" type="Audio">
+                    <param id="0" name="Audio file">13</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="704495770267636" type="Text01">
+                    <param id="0" name="Text">&quot;野生的&quot;</param>
+                </action>
+                <action id="1" name="Append text" sid="123901282569686" type="Text01">
+                    <param id="0" name="Text">name</param>
+                </action>
+                <action id="1" name="Append text" sid="202701204377897" type="Text01">
+                    <param id="0" name="Text">&quot;倒下了&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="416753160795864" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="33" name="Stop all" sid="408427588825666" type="Audio" />
+                <action id="0" name="Play" sid="442312089385286" type="Audio">
+                    <param id="0" name="Audio file">06</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;123&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="683033219284480" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Set text" sid="694101253580135" type="Text01">
+                    <param id="0" name="Text">&quot;战斗胜利&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="348913111605089" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action id="-9" name="Set value" sid="595160638683595" type="System">
+                    <param id="0" name="Variable">a</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="305536984101673" type="System">
+                    <param id="0" name="Variable">b</param>
+                    <param id="1" name="Value">b</param>
+                </action>
+                <action id="-9" name="Set value" sid="148833595817648" type="System">
+                    <param id="0" name="Variable">c</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="652814520868676" type="System">
+                    <param id="0" name="Variable">d</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="438659261751145" type="System">
+                    <param id="0" name="Layout">map02</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="448986556204247">
+            <conditions>
+                <condition id="-5" name="Compare width" sid="544026523846098" type="a18">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Width">hp*1.2</param>
+                </condition>
+                <condition id="-5" name="Compare width" sid="131940890862842" type="a18">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Width">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="553912430045298" type="a18">
+                    <param id="0" name="Width">a18.Width-1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="857008435026065">
+            <conditions>
+                <condition id="-22" name="Else" sid="175232738942102" type="System" />
+                <condition id="-5" name="Compare width" sid="983341096020919" type="a18">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Width">hp*1.2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="549669174951964" type="a18">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
